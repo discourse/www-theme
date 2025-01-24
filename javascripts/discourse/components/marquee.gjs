@@ -3,6 +3,7 @@ import { tracked } from "@glimmer/tracking";
 import { action } from "@ember/object";
 import { inject as service } from "@ember/service";
 import didInsert from "@ember/render-modifiers/modifiers/did-insert";
+import { i18n } from "discourse-i18n";
 
 export default class Marquee extends Component {
   @service store;
@@ -42,7 +43,7 @@ export default class Marquee extends Component {
   <template>
     <div id="latest-topics-bar">
       {{#if this.isLoading}}
-        <div class="loading-spinner">Loading...</div>
+        {{i18n (themePrefix "loading-ellipsis")}}
       {{else}}
         <div>
           <ul>
