@@ -1,8 +1,8 @@
 // base
 
 :root {
-  --heading-font-family: 'Times New Roman', serif;
-  --font-family: 'Arial', sans-serif;
+  --heading-font-family: "Times New Roman", serif;
+  --font-family: "Arial", sans-serif;
   --lowercase: lowercase;
   --button-radius: 0.25em;
   --d-button-border-radius: 0.25em;
@@ -300,7 +300,7 @@ tbody {
     color: var(--primary-800);
   }
   &:before {
-    content: '· ';
+    content: "· ";
   }
 }
 
@@ -336,7 +336,7 @@ tbody {
 
 .discourse-tags .discourse-tag.simple:not(:last-child) {
   &:after {
-    content: '/';
+    content: "/";
     margin-left: 0.25em;
   }
 }
@@ -383,7 +383,7 @@ tbody {
       padding: 0;
       display: flex;
       list-style: none;
-      @if $marquee == 'true' {
+      @if $marquee == "true" {
         &:first-child {
           animation: marquee 60s linear infinite;
         }
@@ -435,7 +435,7 @@ img.avatar {
 
 // button
 
-@import 'common/components/buttons';
+@import "common/components/buttons";
 
 .btn-default,
 .btn-primary {
