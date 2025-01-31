@@ -1,8 +1,6 @@
 import Component from "@glimmer/component";
 import { tracked } from "@glimmer/tracking";
-import { action } from "@ember/object";
-import { inject as service } from "@ember/service";
-import didInsert from "@ember/render-modifiers/modifiers/did-insert";
+import { service } from "@ember/service";
 import { i18n } from "discourse-i18n";
 
 export default class Marquee extends Component {
@@ -27,6 +25,7 @@ export default class Marquee extends Component {
 
       this.latestTopics = response.topics.slice(0, 5);
     } catch (error) {
+      // eslint-disable-next-line no-console
       console.error("Error fetching latest topics:", error);
     } finally {
       this.isLoading = false;

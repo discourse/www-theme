@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "devDependencies": {
+    "@discourse/lint-configs": "2.3.1",
+    "ember-template-lint": "6.1.0",
+    "eslint": "9.19.0",
+    "prettier": "2.8.8"
+  }
+}
