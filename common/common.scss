@@ -270,14 +270,14 @@ tbody {
     border: 1px solid transparent;
 
     &:hover {
-      background: color.adjust($quaternary, $lightness: 56);
-      border-color: color.adjust($quaternary, $lightness: 20);
+      background: color.adjust($quaternary, $lightness: 56%);
+      border-color: color.adjust($quaternary, $lightness: 20%);
       color: var(--quaternary);
     }
 
     &.active {
-      background: color.adjust($quaternary, $lightness: 56);
-      border: 1px solid color.adjust($quaternary, $lightness: 20);
+      background: color.adjust($quaternary, $lightness: 56%);
+      border: 1px solid color.adjust($quaternary, $lightness: 20%);
       color: var(--quaternary);
 
       &::after {
@@ -532,7 +532,7 @@ img.avatar {
   border-radius: 0;
 
   &:hover {
-    background-color: rgba(var(--tertiary-rgb), 0.1);
+    background-color: rgb(var(--tertiary-rgb), 0.1);
   }
 }
 
